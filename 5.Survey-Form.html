@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Fill the Form</h1>
+        <p id="description"> Come on Fill it up</p>
+        </header>
+    <main>
+        <fieldset>
+    <form action="hehe.php" method="post" id="survey-form">
+
+        <label id="name-label" for="name"> Enter Your Name:
+         <input type="text" placeholder="monke...." name="name" value="name" id="name" required>
+         </label>
+<div>
+        <label id="email-label" for="email">Enter Your Email:
+            <input type="email" id="email" name="email"  placeholder="abcd@gmail.com" value="email"required>
+            </label>
+</div>
+  
+<div><label id="number-label" for="number">Enter Your Age: 
+<input type="number" min="13" max="199" inputmode="numeric" id="number" name="age"value="age" placeholder="13-199" pattern="[0-9]"> </div>
+<div>
+<label for="dropdown">Favourite Wrestler?
+    
+    <select id="dropdown" name="dropdown">
+        <option> choose an option</option>
+        <option>John Cena</option>
+        <option>Brock Lesnar</option>
+    </select>
+    </label></div>
+    <fieldset> <label> Choose your Gender </label>
+     
+<label for="male">Male<input type="radio"name="gender"id="male"value="male"></label>
+<label for="female">Female
+<input type="radio"name="gender"value="female" id="female"></label>
+</fieldset>
+<fieldset>
+<label for="hehe">You like John Cena?<input type="checkbox" id="hehe" name="cbox1" value="John Cena"></label>
+<label for="haha">You like Brock Lesnar?<input type="checkbox" id="haha" name="cbox1" value="Brock"></label>
+</fieldset>
+<fieldset>
+<label for="bio">Write your Bio
+    <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+</label>
+</fieldset>
+<fieldset>
+<input type="submit" id="submit">
+</fieldset>
+</form
